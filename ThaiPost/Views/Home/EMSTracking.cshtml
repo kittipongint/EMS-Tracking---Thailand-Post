@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "EMSTracking";
+}
+
+@{
+    ThaiPost.thailandpost.track.TrackItem items = Model;
+    }
+
+<h2>EMSTracking</h2>
+
+<hr/>
+
+<h3>@ViewBag.Barcode</h3>
+
+<p>Totle request @items.TrackCountData.CountNumber item(s)</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Station</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach(var item in items.ItemsData){
+    <tr>
+        <td>@item.DateTime</td>
+        <td>@item.Status : @item.StatusName</td>
+        <td>@item.Location - @item.PostCode</td>
+        <td></td>
+        <td>@item.Description</td>
+    </tr>
+}
+        </tbody>
+</table>
+
+

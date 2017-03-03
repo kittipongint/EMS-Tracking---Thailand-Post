@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://track.thailandpost.co.th/TTPOSTWebService/TrackandTrace.asmx?wsdl" docRef="http://track.thailandpost.co.th/TTPOSTWebService/TrackandTrace.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://track.thailandpost.co.th/TTPOSTWebService/TrackandTrace.asmx" xmlns:q1="http://tempuri.org/" binding="q1:Track_x005F_x0020_and_x005F_x0020_Trace_x005F_x0020_ServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://track.thailandpost.co.th/TTPOSTWebService/TrackandTrace.asmx" xmlns:q2="http://tempuri.org/" binding="q2:Track_x005F_x0020_and_x005F_x0020_Trace_x005F_x0020_ServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

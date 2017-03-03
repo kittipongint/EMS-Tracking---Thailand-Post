@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                EMS Tracking web service caller on ASP.NET MVC4 (also working with MVC5) base on official web service of Track And Trace Web Service - Thailand Post Office
+                To learn more about ASP.NET MVC visit
+                <a href="http://track.thailandpost.co.th" title="Official tracking EMS Website">http://track.thailandpost.co.th</a>.
+            </p>
+        </div>
+    </section>
+}
+<h3>They have 2 method to get result of EMS Tracking status:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>1 - 1 tracking</h5>
+        GetItems Function : Get status for a Barcode number.
+        @Html.ActionLink("Demo", "EMSTracking", "Home")
+    </li>
+
+    <li class="two">
+        <h5>Multiple tracking</h5>
+        RequestItems Function : Get status for multiple barcode number per day. Send request to pool. Then, End of day you will recieve email result of all barcode number and thier status as file attachment.
+        @Html.ActionLink("Demo", "EMSTrackingBatch", "Home")
+    </li>
+</ol>

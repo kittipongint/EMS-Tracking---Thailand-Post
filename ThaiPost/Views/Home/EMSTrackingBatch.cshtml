@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "EMSTrackingBatch";
+}
+
+@{
+    ThaiPost.thailandpost.track.TrackRequest items = Model;
+    }
+
+<h2>EMSTracking</h2>
+
+<hr />
+
+<h3>@ViewBag.Barcode</h3>
+
+<p>Totle request @ViewBag.BarcodeCount item(s)</p>
+
+<p>Response @items.ItemsData.StatusResponse</p>
+
